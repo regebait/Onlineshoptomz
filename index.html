@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portofolio dan marketplace sederhana.">
-  <title>WebKita — Portfolio & Store</title>
+  <title>TOMZSTORE Portfolio & Store</title>
   <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f7f7f8;--card:#fff;--text:#17181c;--muted:#6b6f78;--line:#e7e8eb;--accent:#111827;--soft:#eef0f3}
@@ -50,7 +50,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 <body>
   <header class="header">
     <div class="container nav">
-      <a class="logo" href="#home">Web<span>Kita</span></a>
+      <a class="logo" href="#home">TOMZ<span>STORE</span></a>
       <nav>
         <a href="#home">Home</a>
         <a href="#products">Produk</a>
@@ -120,7 +120,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 
   <footer>
     <div class="container footer-inner">
-      <p>© <span id="year"></span> WebKita. All rights reserved.</p>
+      <p>© <span id="year"></span> TOMZSTORE. All rights reserved.</p>
       <a href="#home">Kembali ke atas ↑</a>
     </div>
   </footer>
@@ -160,8 +160,8 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 // PENGATURAN TOKO
 // =============================
 const STORE = {
-  whatsapp: "6281234567890", // GANTI dengan nomor WhatsApp kamu. Format: 628xxxxxxxxxx
-  name: "WebKita"
+  whatsapp: "62895343287264", // GANTI dengan nomor WhatsApp kamu. Format: 628xxxxxxxxxx
+  name: "Tomzstore"
 };
 
 // =============================
@@ -179,7 +179,7 @@ const products = [
 ];
 
 let selectedCategory = "Semua";
-let cart = JSON.parse(localStorage.getItem("webkita_cart") || "[]");
+let cart = JSON.parse(localStorage.getItem("Tomzstore_cart") || "[]");
 let selectedProduct = null;
 
 const rupiah = n => new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n);
